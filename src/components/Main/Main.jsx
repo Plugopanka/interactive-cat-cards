@@ -1,7 +1,7 @@
 import "./Main.css";
 import Filter from "../Filter/Filter";
 import CardList from "../CardList/CardList";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Main({ cards, setCards, handleCardLike, likedCards }) {
   const [isLiked, setIsLiked] = useState(false);

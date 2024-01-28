@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import "./Header.css";
 
-function Header({ isLoggedIn, onClickBurger, isBurgerOpened }) {
+function Header() {
   return (
     <header className="header">
       <h1 className="header__title">interactive cat cards</h1>

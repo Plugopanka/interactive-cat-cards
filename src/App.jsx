@@ -66,6 +66,10 @@ function App() {
   }
 
   useEffect(() => {
+    setCards(cards);
+  }, [cards]);
+
+  useEffect(() => {
     setLikedCards(likedCards);
   }, [likedCards]);
 
@@ -85,12 +89,19 @@ function App() {
         <div className="page">
           <Header />
           <Routes>
-            <Route path="*" element={<Navigate to="/interactive-cat-cards" replace={true} />} />
+            <Route path="*" element={<Navigate to="/" replace={true} />} />
             <Route
-              path="/interactive-cat-cards"
-              element={<Main cards={cards} setCards={setCards} handleCardLike={handleCardLike} likedCards={likedCards} />}
+              path="/"
+              element={
+                <Main
+                  cards={cards}
+                  setCards={setCards}
+                  handleCardLike={handleCardLike}
+                  likedCards={likedCards}
+                />
+              }
             />
-            <Route path="/interactive-cat-cards/:id" element={<CardPage cards={cards} />} />
+            <Route path="/:id" element={<CardPage cards={cards} />} />
           </Routes>
           <Footer />
         </div>

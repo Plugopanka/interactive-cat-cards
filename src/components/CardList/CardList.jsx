@@ -5,8 +5,6 @@ import { useLocation } from "react-router-dom";
 function CardList({ cards, handleCardDelete, handleCardLike }) {
   const location = useLocation();
 
-  const newCards = JSON.parse(localStorage.getItem("cards"));
-
   function getLikedCards(card) {
     const likedCards = JSON.parse(localStorage.getItem("likedCards"));
     if (likedCards) {
@@ -16,7 +14,7 @@ function CardList({ cards, handleCardDelete, handleCardLike }) {
 
   return (
     <section className="cards-list">
-      {location.pathname === "/interactive-cat-cards" && (
+      {location.pathname === "/" && (
         <ul className="cards-list__list">
           {cards.map((card) => (
             <Card
