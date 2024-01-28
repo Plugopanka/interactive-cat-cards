@@ -2,11 +2,7 @@ import "./CardList.css";
 import Card from "../Card/Card";
 import { useLocation } from "react-router-dom";
 
-function CardList({
-  cards,
-  handleCardDelete,
-  handleCardLike,
-}) {
+function CardList({ cards, handleCardDelete, handleCardLike }) {
   const location = useLocation();
 
   const newCards = JSON.parse(localStorage.getItem("cards"));
@@ -20,7 +16,7 @@ function CardList({
 
   return (
     <section className="cards-list">
-      {location.pathname === "/" && (
+      {location.pathname === "/interactive-cat-cards" && (
         <ul className="cards-list__list">
           {cards.map((card) => (
             <Card
@@ -32,27 +28,6 @@ function CardList({
             />
           ))}
         </ul>
-      )}
-      {location.pathname === "/:id" && (
-        <>
-          <ul className="card-list__list">
-            {movies.map((movie) => (
-              <MoviesCard
-                key={movie._id}
-                movie={movie}
-                handleMovieDelete={handleMovieDelete}
-              />
-            ))}
-          </ul>
-          <button
-            type="button"
-            className="movies-list__button"
-            aria-label="Показать фильмы."
-            onClick={addMoreMovies}
-          >
-            Ещё
-          </button>
-        </>
       )}
     </section>
   );

@@ -13,16 +13,16 @@ function Card({ card, handleCardLike, handleCardDelete, isLiked }) {
   }
 
   return (
-    <li className={`card card_location_${location.pathname === "/" ? "catalog" : "card"}`}>
-      <Link to={card.id} className={`card__link card__link_location_${location.pathname === "/" ? "catalog" : "card"}`}>
+    <li className={`card card_location_${location.pathname === "/interactive-cat-cards" ? "catalog" : "card"}`}>
+      <Link to={card.id} className={`card__link card__link_location_${location.pathname === "/interactive-cat-cards" ? "catalog" : "card"}`}>
         <img
           src={card.url}
           alt="Изображение с котиком."
-          className={`card__image card__image_location_${location.pathname === "/" ? "catalog" : "card"}`}
+          className={`card__image card__image_location_${location.pathname === "/interactive-cat-cards" ? "catalog" : "card"}`}
         />
-        <span className={`card__text card__text_location_${location.pathname === "/" ? "catalog" : "card"}`}>{card.text}</span>
+        <span className={`card__text card__text_location_${location.pathname === "/interactive-cat-cards" ? "catalog" : "card"}`}>{card.text}</span>
       </Link>
-      {location.pathname === "/" && (
+      {location.pathname === "/interactive-cat-cards" && (
         <div className="card__button-container">
           <button
             type="button"

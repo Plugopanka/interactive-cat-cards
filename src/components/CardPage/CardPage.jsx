@@ -15,7 +15,7 @@ function CardPage({ cards }) {
 
   return (
     <main className="card-page">
-      <Link to="/" className="card-page__link">
+      <Link to="/interactive-cat-cards" className="card-page__link">
         <button
           type="button"
           className={`card-page__button 

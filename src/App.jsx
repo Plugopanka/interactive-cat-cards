@@ -85,12 +85,12 @@ function App() {
         <div className="page">
           <Header />
           <Routes>
-            <Route path="*" element={<Navigate to="/" replace={true} />} />
+            <Route path="*" element={<Navigate to="/interactive-cat-cards" replace={true} />} />
             <Route
-              path="/"
+              path="/interactive-cat-cards"
               element={<Main cards={cards} setCards={setCards} handleCardLike={handleCardLike} likedCards={likedCards} />}
             />
-            <Route path="/:id" element={<CardPage cards={cards} />} />
+            <Route path="/interactive-cat-cards/:id" element={<CardPage cards={cards} />} />
           </Routes>
           <Footer />
         </div>
