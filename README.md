@@ -2,7 +2,7 @@
 
 ----
 ## *Ссылка на сайт:*
-
+https://plugopanka.github.io/interactive-cat-cards/
 
 ----
 ## *Функциональность*
