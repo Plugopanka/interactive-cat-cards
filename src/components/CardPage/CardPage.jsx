@@ -16,18 +16,15 @@ function CardPage({ cards }) {
   return (
     <main className="card-page">
       <Link to="/" className="card-page__link">
-      <button
-            type="button"
-            className={`card-page__button 
+        <button
+          type="button"
+          className={`card-page__button 
             card-page__button_state_exit
               `}
-            aria-label="Вернуться в каталог"
-          ></button>
+          aria-label="Вернуться в каталог"
+        ></button>
       </Link>
-      <Card
-        key={foundCard.id}
-        card={foundCard}
-      />
+      {foundCard !== undefined && <Card key={foundCard.id} card={foundCard} />}
     </main>
   );
 }
