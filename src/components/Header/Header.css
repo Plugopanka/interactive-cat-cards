@@ -1,0 +1,22 @@
+.header {
+  width: 89%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #131313;
+  border-bottom: 1px solid #c3c3c3;
+  box-sizing: border-box;
+}
+
+.header__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.header__title:first-letter {
+  text-transform: uppercase;
+}

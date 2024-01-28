@@ -1,0 +1,34 @@
+.card-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 30px auto 0;
+}
+
+.card-page__link {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.card-page__button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.card-page__button:hover {
+  opacity: 0.7;
+}
+
+.card-page__button_state_exit {
+  background-image: url("../../img/angle-double-left.svg");
+}

@@ -1,0 +1,112 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #e6ebf0;
+  row-gap: 10px;
+  column-gap: 0;
+}
+
+.card_location_catalog {
+  width: 260px;
+}
+
+.card__link {
+  cursor: pointer;
+  width: 90%;
+  margin-top: 10px;
+  text-decoration: none;
+  overflow: hidden;
+	position: relative;
+  transition: 0.2s;
+}
+
+.card__link_location_catalog {
+  height: 190px;
+}
+
+.card__link_location_card {
+  max-height: 650px;
+}
+
+.card__link_location_catalog:after {
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 1.2em;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), #e6ebf0 100%);
+	pointer-events: none;
+}
+
+.card__link_location_catalog:hover {
+  opacity: 0.7;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card__image_location_catalog {
+  height: 150px;
+}
+
+.card__image_location_card {
+  max-height: 500px;
+}
+
+.card__text {
+  margin: 0;
+  font-size: 13px;
+  color: #131313;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card__text_location_card {
+  padding-bottom: 10px;
+}
+
+.card__button-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.card__button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  opacity: 0.7;
+}
+
+.card__button_state_save {
+  background-image: url("../../img/like.svg");
+}
+
+.card__button_state_saved {
+  background-image: url("../../img/liked.svg");
+}
+
+.card__button_state_delete {
+  background-image: url("../../img/trash.svg");
+}

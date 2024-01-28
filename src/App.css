@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.root {
+  margin: 0 auto;
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.page {
+  /* сглаживание текста */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  /* масштаб текста */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+  /* читаемость */
+  text-rendering: optimizeLegibility;
+
+  font-family: "Inter", Helvetica, sans-serif;
+  color: #131313;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
