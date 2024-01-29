@@ -15,6 +15,7 @@ function App() {
   const [cards, setCards] = useState(
     JSON.parse(localStorage.getItem("cards")) || []
   );
+  
   const [likedCards, setLikedCards] = useState(
     JSON.parse(localStorage.getItem("likedCards")) || []
   );

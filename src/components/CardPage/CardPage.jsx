@@ -6,8 +6,8 @@ function CardPage({ cards }) {
   const params = useParams();
   const prodId = params.id;
 
-  const foundCard = cards.find(function (item) {
-    return item.id === prodId;
+  const foundCard = cards.find(function (el) {
+    return el.id === prodId;
   });
 
   return (
